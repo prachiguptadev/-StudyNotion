@@ -5,6 +5,8 @@ import HighlightText from "../components/core/HomePage/HighlightText";
 import CTAButton from "../components/core/HomePage/Button";
 import Banner from "../assets/Images/banner.mp4";
 import CodeBlocks from "../components/core/HomePage/CodeBlocks";
+import TimelineSection from "../components/core/HomePage/TimelineSection";
+import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection";
 
 const Home = () => {
   return (
@@ -141,7 +143,7 @@ const Home = () => {
         </div>
 
         <div className="w-11/12 max-w-maxContent flex flex-col justify-between items-center gap-7 mx-auto">
-          <div className="flex flex-row gap-5">
+          <div className="flex flex-row gap-5 mb-10 mt-[150px]">
             <div className="text-4xl font-semibold w-[45%]">
               Get the Skills you need for a
               <HighlightText text={"Job that is in demand"} />
@@ -158,6 +160,10 @@ const Home = () => {
               </CTAButton>
             </div>
           </div>
+
+          <TimelineSection />
+
+          <LearningLanguageSection />
         </div>
       </div>
 
