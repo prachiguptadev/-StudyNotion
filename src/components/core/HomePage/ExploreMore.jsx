@@ -55,14 +55,14 @@ const ExploreMore = () => {
         })}
       </div>
 
-      <div className="lg:h-[150px]"></div>
+      <div className="lg:h-[200px]"></div>
 
-      <div>
+      <div className="flex gap-9 w-full justify-center mt-[-180px] flex-wrap lg:absolute right-0 left-0 mx-auto">
         {courses.map((course, index) => {
           return (
-            <CourseCard course={course}
-              
+            <CourseCard
               key={index}
+              cardData={course}
               currentCard={currentCard}
               setCurrentCard={setCurrentCard}
             />
